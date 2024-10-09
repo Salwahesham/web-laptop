@@ -1,0 +1,947 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(205, 217, 241);
+  background-image: url(pictures/KYGlEG.gif);
+  
+}
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(1, 16, 46);
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 140px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgb(19, 39, 83);
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: 1px solid rgb(5, 1, 36);
+  
+}
+
+.list1 {
+  display: flex;
+  gap: 30px;
+}
+
+.list1 li {
+  list-style: none;
+}
+
+.list1 li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 19px;
+  transition: color 0.3s ease, border 0.3s ease;
+  border-bottom: 2px solid transparent; 
+  padding-bottom: 2px;
+}
+
+.list1 li a:hover {
+  color: #fc03e7;
+  border-bottom: 2px solid #f9fbfc; 
+  border-top: 2px solid #f9fbfc;
+}
+
+/* ////////////////////   اول سكشن ///////////// */
+
+.section1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(pictures/bak2.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient( #081a68c9, #b60563b4,#081a68c9);
+}
+
+.content {
+  width: 60%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.title1 {
+  color: #fff;
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pl1 {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  width: 200px;
+  height: 49px;
+  border-radius: 6px;
+  font-size: 20px;
+  border: none;
+  text-transform: capitalize;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn1 {
+  background-color: #fff; 
+  margin-right: 15px;
+  color: #000;
+}
+
+.btn2 {
+  background-color: rgb(24, 63, 139);  
+  color: #11010f; 
+}
+
+.btn1:hover {
+  background-color: rgb(24, 63, 139); 
+  color: #fc03e7;
+}
+
+.btn2:hover {
+  background-color: #fff;
+  color: #fc03e7;
+}
+
+
+
+
+/* ////////////////////////////نهاية السكشن الاول //////////// */
+
+/* /////////////////بداية السكشن 2 //////////////// */
+.section2 {
+    width: 100%;
+    height: 10vh; 
+    background-color: rgba(1, 16, 46, 0.884);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0; 
+}
+
+.section2 p {
+    color: #fff; 
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0; 
+}
+
+.line {
+    width: 20%; 
+    height: 5px; 
+    background-color: #f5f3f3; 
+    border-radius: 50px; 
+    transition: background-color 0.3s ease, height 0.3s ease;
+    margin-top: 10px;
+}
+
+.line:hover {
+    background-color: #edb4dc; 
+    height: 8px; 
+}
+
+
+
+/* /////////////////////////نهاية سكشن 2////////////////// */
+
+.section-3 {
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 50px 0;
+}
+
+.card {
+  position: relative;
+  width: 30%;
+  height: 350px;
+  background-color: rgba(1, 16, 46, 0.884);
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color:#fff;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -100%; /* بدءًا من خارج البطاقة */
+  left: 0;
+  background: linear-gradient(45deg, #ff58339c, #33ff58bb, #3357ff, #ff33a085);
+  opacity: 0.2;
+  transition: top 0.3s, opacity 0.3s; 
+}
+
+.card:hover::before {
+  top: 0; /* املي البطاقه عند النزول */
+  opacity: 0.4;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+  font-size: 55px;
+  color: #e2d6e1;
+  margin: 30px 0;
+}
+
+.title {
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.description {
+  font-size: 20px;
+  color: #918cc2;
+  margin: 15px 0;
+}
+
+.btn {
+  margin-top: 20px;
+  background-color: rgb(207, 211, 219);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #010014;
+}
+
+.btn:hover {
+  background-color: #fff;
+}
+
+
+/*//////////////////////////////////     3نهاية السكشن التالت  /////////////////////////////////////////////*/
+.section-4{
+width:100%;
+height:100vh;
+background: linear-gradient(45deg, #ff58339c, #33ff58bb, #3357ff, #ff33a085);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+.section-4 .continte{
+position: relative;
+width: 350px;
+height: 230px;
+margin: 15px; 
+border-radius: 15px;
+background-color: #2b04b9;
+border: 3px solid rgb(75, 73, 79);
+display: inline-block; 
+overflow: hidden; 
+
+}
+.img-text img{
+width:350px; height:230px; 
+margin:auto;
+border-radius: 15px;
+float: left; 
+z-index:1;   
+border:3px 3px soild rgb(75, 73, 79);
+}
+.text{
+position: relative;
+background-color: rgba(46, 37, 37, 0.524);
+width:350px; height:230px; 
+z-index:2;
+border-radius:14px;
+opacity: 0;
+transition: 1s    
+}
+.text:hover{
+position: absolute;
+visibility: visible;
+opacity: 1 ;  
+}
+.cat1{
+position: absolute;
+margin: 35%;
+margin-top:80px;
+text-align: center;
+color:#2b04b9;
+font-weight:bold;
+font-size:20px;
+}
+.cat2{
+width:100%;
+position: absolute;
+margin:auto;
+margin-top:170px;
+text-align: center;
+color:#a49393; 
+font-size:25px;   
+}
+   /* icons */
+.cat3 {
+width:50%;
+position: absolute;
+margin:30px 75px ;
+margin-top:130px;
+text-align: center;
+color:#04066b; 
+font-size:30px;
+}
+.continte:after{ 
+content: "";
+position: absolute;
+width: 0; 
+left: 0;
+right: 0;
+background-color:#1d2221;
+opacity:.7;
+transition: 1s;
+border-radius:10px;
+}
+.continte:hover::after{
+width:100%;
+height: 100%;
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+.section-5{
+width: 100%;
+ height:100vh; 
+ background: linear-gradient(45deg, #ff58339c, #33ff58bb, #3357ff, #ff33a085);
+}
+.app1{
+position: relative;
+width:330px; height:210px;  
+margin-left:300px;
+margin:30px 50px;
+border-radius: 15px;
+float: left;
+background-color: #fff;
+   border:2px solid #010133;
+    box-shadow:3px 3px #262645;
+}
+.app2{
+position: relative;
+width:330px; height:210px; 
+margin-left:300px;
+ margin:25px 50px;
+border-radius: 15px;
+float: left;
+  background-color: #fff;
+  border:2px solid #010133;
+  box-shadow:3px 3px #262645;
+}
+.hc4{
+margin:20px 20px;
+color: #010133;
+font-size:30px;
+}
+.po1{
+color: #656192;
+ margin:15px;
+font-size:26px;
+
+}
+.oo{
+color:#0101f6
+}
+.app1:after{
+content: "";
+position: absolute;
+width: 0; 
+right: 0;
+top:0;
+left: 0;
+background-color:#0f1010;
+opacity:0;
+transition: 1.2s;
+border-radius:15px;
+
+}
+.app1:hover::after{
+width:100%;
+height: 100%;
+opacity:0.5;
+}
+.app2:after{
+content: "";
+position: absolute;
+width: 0;
+right: 0;
+top:0;
+left: 0;
+background-color:#0f1010;
+opacity:0;
+transition: 1.2s; 
+ border-radius:15px;
+
+}
+.app2:hover::after{
+width:100%;
+height: 100%;
+opacity:0.5;
+}
+
+
+/* /////////////////////////////////// */
+.section-6 {
+  width: 100%; 
+  height: 100vh; 
+  background: linear-gradient(45deg, #ff58339c, #33ff58bb, #3357ff, #ff33a085);
+
+}
+
+.g-section5 {
+  width: 90%; 
+  margin: auto;
+}
+
+.grob-section5 {
+  width: 45%;  
+  height: 390px; 
+  float: left;  
+  list-style: none;
+  margin: 40px;
+  font-size: 25px;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.img_il_section5  {
+  width: 35%;  
+  height: 400px;  
+  float: right;
+  margin: 37px 20px; 
+  text-align: center;
+}
+
+.img-section5 {
+  width: 360px; 
+  height: 400px; 
+  margin: 20px 0; 
+  border-radius: 8px;
+  border: 3px solid #ae326e76; 
+  box-shadow: 3px 3px 1px 1px #0101337a;
+}
+
+.li5 {
+  margin: auto; /* لتوسيع المسافة العلوية */
+}
+
+.li5 li {
+  width: 13px; 
+  height: 13px; 
+  margin: 5px 10px; 
+  border-radius: 300px;    
+  background-color: rgb(237, 237, 240);
+  list-style: none; 
+  display: inline-block; 
+}
+
+.li5 li:hover {
+  background-color: #ab2473;
+}
+
+.lim {
+  background-color: #151598;
+  color: #f4f4f5; 
+  border: 3px solid #2a0115;
+  border-radius: 50%;
+}
+
+
+/* /////////////
+start section 6
+/////////////////////*/
+
+.section-7 {   
+  width: 100%; 
+  height: 50vh; 
+  background-image: url(pictures/imgs4.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.overley2 {
+  width: 100%; 
+  height: 50vh; 
+  margin: auto;
+  background-color: rgba(8, 5, 24, 0.562);
+  opacity: 0.8; 
+}
+
+.content2 {
+  width: 95%; 
+  height: 45vh;
+  margin: auto; 
+  font-size: 26px; 
+  color: #fdfdff;
+  text-align: center;
+  display: flex; 
+  justify-content: space-around; /* توزيع العناصر بالتساوي */
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+.lio {
+  color: rgba(0, 0, 255); 
+  font-weight: bold; 
+  font-size: 35px;
+}
+
+.go1 {
+  border-radius: 15px;
+  text-align: center; /* لتوسيع النص داخل كل عنصر */
+}
+
+
+  /* ///////////////////////////
+  end sdction7
+  ////////////////////////////////// */
+
+
+  .sectino-8 {
+    width: 100%;  
+    height: 100vh; 
+    background: linear-gradient(45deg, #ff58339c, #33ff58bb, #3357ff, #ff33a085);
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column; 
+}
+
+.Pricing {
+    width: 90%;
+    display: flex; 
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    margin: auto;
+}
+
+.Pricing1 {
+    position: relative;
+    width: 320px; 
+    height: 390px; 
+    margin: 25px;
+    border-radius: 10px;
+    background-color: #fdfbfc;
+    color: #080808; 
+    box-shadow: 2px 3px #9c9caf;
+    font-weight: bold;  
+}
+
+.Pric2 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.Pric3 {
+    width: 90px; 
+    height: 90px;
+    border-radius: 50px;
+    background-color: #0c013a;
+    font-weight: bold; 
+    border: 2px solid rgb(6, 1, 33);
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 2px 2px 2px #23236497;
+}
+
+.pricpp {
+    font-size: 40px; 
+    font-weight: bold;
+    color: #fdfdfd; 
+    text-align: center;
+}
+
+.pricpp0 {
+    color: #f8f7f7;
+    text-align: center;
+}
+
+.pricpp1 {
+    color: #000020;   
+    font-size: larger;   
+    letter-spacing: 3px;  
+    text-align: center;
+    margin-top: 30px;
+}
+
+button {
+    width: 200px; 
+    height: 40px; 
+    font-size: larger;
+    border-radius: 10px;
+    border: 2px solid rgb(7, 1, 53);
+    font-weight: bold;
+    margin: 50px auto; /* توسيط الزر */
+    color: #fff;
+    background-color: #010133;
+    box-shadow: 3px 2px #00002083;
+}
+
+.Pricing1:after {
+    content: "";
+    position: absolute;
+    width: 0; 
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #0f1010;
+    opacity: 0;
+    transition: 1.2s;
+    border-radius: 8px;
+}
+
+.Pricing1:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+/* ////////////////////////////// */
+
+.sectino-9{
+   width:100%;  
+   height:50vh;  
+   background-image:url(pictures/imgs2.jpg); 
+ background-size:cover;
+  background-attachment: fixed;
+}
+.imgse8{
+ width:100px;
+  height:100px;
+   border:4px solid #010133;
+  border-radius:50px; 
+   margin:10px;
+}
+.se81{
+ width:300px;
+  height: 250; 
+  margin-right:right; 
+  float: right;
+   margin:40px;
+}
+.se82{
+ width:300px;
+  height:250; 
+margin-left: left; 
+float: left;
+ margin:40px;
+
+}
+.se08{
+ color: #f9f9fa;
+}
+.g-section8{
+ width:70%; margin:auto;
+}
+h3{  
+ float: right; margin:30px;
+    color: #fbfafa;
+}
+.p33{
+float: right; margin:30px;
+margin-top:-62px;
+color: #240f9e;
+font-size:20px;
+ font-weight:bold;
+}
+
+
+/* ////////////////////////////// */
+.sectino9{ 
+  width:100%; 
+    height:80vh;
+     
+}
+.container {
+ width: 80%;
+ margin: auto;
+ margin-top: 70px;
+ 
+}
+
+.go {
+ margin: 0px  5%;
+}
+.team-item {
+ position: relative;
+ float: left;
+ width: 30%;
+ background-color: rgb(23, 4, 62);
+ padding: 18px 14px;
+ text-align: center;
+}
+.team-img {
+ width: 90%;
+ margin: auto;
+ position: relative;
+}
+.team-img  img {
+ width: 100% ;
+}
+.team-overlay {
+ position: absolute ;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: rgba(0,0,0,0.5);
+ visibility: hidden;
+ opacity: 0;
+ transition: 1s ;
+}
+.team-item:hover  .team-overlay {
+ visibility: visible;
+ opacity: 1 ;    
+}
+.team-overlay a {
+ display: block;
+ width: 40px;
+ height: 40px;
+ background-color: rgb(87, 44, 241);
+ color: #fff;
+ margin-left: auto ;
+}
+.team-overlay  a  i {
+ line-height: 40px ;
+ font-size: 20px;
+}
+.team-info-title {
+ text-transform: capitalize;
+ padding: 10px   0px ;
+ color:#fff;
+}
+.team-info-p {
+ text-transform: uppercase;
+ color: grey;
+}
+.team-item:after{
+ content: "";
+position: absolute;
+width: 0; height: 0;
+top:0;
+left: 0;
+background-color:#0f1010;
+opacity:0;
+transition: 1.5s;
+}
+.team-item:hover::after{
+ width:100%;
+ height: 100%;
+ opacity:0.5;
+}
+.sectino10{
+width:100%;  
+ height:100vh; 
+ background: linear-gradient(45deg, #ff58339c, #33ff58bb, #3357ff, #ff33a085);
+
+}
+.pr1{
+float: right;
+  width: 28%;
+      background-color: rgb(197, 196, 196);
+          padding: 18px 14px;
+            text-align: center;
+                  margin-left:30px;
+                     border-radius:5px;
+                     position: relative;
+}
+.pr2{
+position: relative;
+float: left;
+      width: 28%;
+        background-color: rgb(197, 196, 196);
+          padding: 18px 14px;
+              text-align: center;
+                  margin-right:70px;
+                     border-radius: 5px;
+}
+.pr3{
+ position: relative;
+float:left;
+    width: 28%;
+        background-color: rgb(197, 196, 196);
+            padding: 18px 14px;
+              text-align: center; 
+                margin-left: 30px;
+                border-radius:5px;
+}
+.pr1:after{
+content: "";
+position: absolute;
+width: 0; height: 0;
+top: 0;
+right: 0;
+background-color:#3f3f4c;
+ opacity:0;
+   transition: 2s;
+}
+.pr1:hover::after{
+width:100%;
+height: 100%;
+opacity:0.5;
+}
+.pr2:after{
+content: "";
+position: absolute;
+width: 0; height: 0;
+top: 0;
+right: 0;
+background-color:#3f3f4c;
+ opacity:0;
+   transition: 2s;
+}
+.pr2:hover::after{
+width:100%;
+height: 100%;
+opacity:0.5;
+}
+.pr3:after{
+content: "";
+position: absolute;
+width: 0; height: 0;
+top: 0;
+right: 0;
+background-color:#3f3f4c;
+ opacity:0;
+   transition: 2s;
+}
+.pr3:hover::after{
+width:100%;
+height: 100%;
+opacity:0.5;
+}
+.bgrop10{
+width: 90%;
+margin: auto;
+position: relative;
+}
+
+.pr3:hover{
+visibility: visible;
+opacity: 1 ;  
+}
+
+
+/* تصغير الصورة */
+.pr1 img, .pr2 img, .pr3 img {
+  width: 250px;
+  height: 230px; 
+}
+
+/* تعديل الأيقونات لتكون متناسقة بجانب بعضها البعض */
+.li10 {
+  display: inline-block; 
+  font-size: 18px;
+  margin: 10px 15px;
+  color: #010180;
+  list-style: none;
+  vertical-align: middle; 
+}
+
+/* ضبط النص */
+.h210 {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 22px;
+  text-align: center; 
+}
+
+.p10 {
+  color: #505050;
+  font-style: italic;
+  text-align: justify; 
+  margin-top: 10px; 
+}
+
+/* زر "Read more" توسيط النص */
+.a10 {
+  text-decoration: none;
+  font-size: 19px;
+  color: #1b1bd9;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+/* ////////////////////////////// */
+.footer {
+  width: 100%;
+  height: 30vh;
+  background-color: rgb(1, 16, 46);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+
+.footer-icons {
+  margin: 15px 0;
+}
+
+.footer-icons li {
+  display: inline-block;
+  font-size: 20px;
+  color: #ffffff;
+  border-radius: 50%;
+  margin: 0 10px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+
+}
+
+.footer-icons li:hover {
+  background-color: rgba(145, 155, 173, 0.527);
+}
+
+.footer-text {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 10px;
+}
